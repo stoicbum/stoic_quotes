@@ -19,7 +19,7 @@ CLIENT_ID = json.loads(
 APPLICATION_NAME = "Stoic Quotes"
 
 #connect to Database and create database session
-engine = create_engine('sqlite:///stoicquotes.db')
+engine = create_engine('sqlite:///stoic.db')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
